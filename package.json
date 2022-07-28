@@ -23,7 +23,7 @@
     "docker": "docker run --rm --network host -v $(pwd):/work/ -w /work/ -it mcr.microsoft.com/playwright:latest /bin/bash"
   },
   "engines": {
-    "node": "=16.14.2"
+    "node": ">=16.14.2"
   },
   "repository": {
     "type": "git",
