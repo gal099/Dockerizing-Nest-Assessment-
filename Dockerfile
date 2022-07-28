@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/playwright:v1.23.0-focal
+FROM node:16.14.2-buster-slim
 
 WORKDIR /app
 COPY package.json .
