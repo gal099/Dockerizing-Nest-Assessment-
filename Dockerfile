@@ -1,6 +1,7 @@
-FROM node:16.14.2-buster-slim
+FROM ubuntu
+RUN apt-get update && apt install -y nodejs && apt install -y npm
 
 WORKDIR /app
 COPY package.json .
-RUN apt-get update && npm install -y
+RUN npm install -y
 COPY . .
